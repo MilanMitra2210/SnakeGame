@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Mate+SC&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+
+}
+.body{
+    background: url("../img/bg.jpg");
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#board{
+    background : linear-gradient(rgb(116, 207, 116) ,rgb(230, 230, 134));
+    width: 90vmin;
+    height: 92vmin;
+    border: 2px solid black;
+    display: grid;
+    grid-template-rows: repeat(25,1fr);
+    grid-template-columns: repeat(25,1fr);
+}
+#scoreBox{
+    position: absolute;
+    top: 9px;
+    right: 200px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'Mate SC', serif;
+}
+#hiscoreBox{
+    position: absolute;
+    top: 52px;
+    right: 120px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'Mate SC', serif;
+}
+#levelBox{
+    position: absolute;
+    top: 9px;
+    left: 120px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'Mate SC', serif;
+}
+
+.head{
+    background:linear-gradient(rgb(209, 54, 54),rgb(196, 196, 107)) ;
+    border: 2px solid rgb(44, 2, 44);
+    border-radius: 6px;
+    transform: scale(1.02);
+
+}
+.snake{
+    background-color: purple;
+    border: .25vmin solid white;
+    border-radius: 12px;
+}
+.food{
+    background: linear-gradient(red,purple);
+    border: .25vmin solid black;
+    border-radius: 8px;
+}
